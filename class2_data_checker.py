@@ -36,9 +36,14 @@ parser.add_argument(
 
 parser.add_argument(
                 "--output", "-o",
+                required=True,
                 default="data_quality.txt",
                 help="Path to input CSV file"
                 )
+parser.add_argument(
+                "--format", 
+                default="csv",
+                help="Output format: 'csv' or 'json'; default is csv")
 parser.add_argument(
                 "--verbose", "-v",
                 action="store_true",

@@ -21,3 +21,5 @@ parser.add_argument("--verbose",
                     help="Print detailed information")
 
 args = parser.parse_args()
+
+print(args)
